@@ -1,0 +1,6 @@
+streamlit
+requests
+python-dotenv
+openai
+sentence-transformers
+elasticsearch==7.17.9
