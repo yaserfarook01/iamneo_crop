@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Farook's GoodBYE",
+    "version": "1.0",
+    "description": "Turns question bank names red on the LTIMindtree platform",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://api.examly.io/*",
+        "https://admin.ltimindtree.iamneo.ai/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://admin.ltimindtree.iamneo.ai/*"
+            ],
+            "css": ["styles.css"],
+            "js": ["converted.js", "content.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
