@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Auth Token Copier",
+  "version": "1.0",
+  "description": "Copies the auth token from the page",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": [
+    "https://admin.ltimindtree.iamneo.ai/*",
+    "https://admin.neowise.examly.io/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

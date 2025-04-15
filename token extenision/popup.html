@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auth Token Copier</title>
+  <style>
+    body { width: 300px; padding: 10px; }
+    textarea { width: 100%; height: 100px; margin-top: 10px; display: none; }
+    #manualCopyButton { display: none; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <button id="copyButton">Extract Auth Token</button>
+  <p id="status"></p>
+  <textarea id="tokenDisplay" readonly></textarea>
+  <button id="manualCopyButton">Copy Token</button>
+  <script src="popup.js"></script>
+</body>
+</html>
